@@ -1,0 +1,103 @@
+/* Tablet Layout: 768px */
+
+@media screen and ( min-width: 481px ) {
+
+	/***** T O P  -  W R A P P E R ****/
+	div.top-wrapper,
+	.top-wrapper div.header {
+		height: 120px;      
+	}	
+	.home div.bar-left,
+	.innerPage div.bar-right {
+		display: block;
+	}
+	.top-bar > div {
+		width: 50%;
+	}
+	.top-banner nav {
+		width: 40%;
+		margin-top: 20px;
+		margin-left: 17%;	
+	}
+	
+	/******   M  A I N   S E A R C H  ******/
+	.main-search form {
+		margin-top: 50px;
+		padding: 30px;
+		overflow: hidden;
+	}
+	.main-search input {
+	margin: 3px;
+	float: left;
+	}
+	.main-search ul.format {
+	margin-left: 15px;
+	padding-top: 10px;
+	}
+	input.search-btn {
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+	}
+	
+	/****  M A I N  -  C O N T E N T ******/
+	.intro div.third {
+		width: 30%;
+		margin: 10px 0px 10px 20px;
+		float: left;
+		text-align: center;
+	}
+	div.third span.circle {
+		margin: 0px auto 10px;
+		padding-top: 40px;	
+	}
+
+	div.third p {
+		font-size: .9em;
+		width: 90%;
+		margin: 0px auto;
+	}
+	ul.sister-sites li {
+		font-size: .9em;
+	}
+	ul.sister-sites span.circle {
+		width: 30px;
+		height: 27px;
+		padding-top: 3px;
+		padding-right: 2px;
+	}
+	.intro div.windows {
+		width: 100%;
+		padding: 0px;
+		margin: 0px auto;
+	}
+	div.box {
+		float: left;
+	}
+	div.box.categories,
+	div.box.tv {
+		width: 95%;
+	}
+	div.box.mobile,
+	div.box.dvd,
+	div.box.sell,
+	div.box.rent  {
+		width: 46%;
+		height: 200px;
+	}
+	div.box.mobile,
+	div.box.rent {
+		margin-right: 10px;
+	}
+	.piano
+	-webkit-transition: opacity 0.3s ease-in-out;
+-moz-transition: opacity 0.3s ease-in-out;
+-o-transition: opacity 0.3s ease-in-out;
+transition: opacity 0.3s ease-in-out;
+}
+ 
+
+	
+
+ 	
+}

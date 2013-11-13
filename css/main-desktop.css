@@ -1,0 +1,93 @@
+@media screen and ( min-width: 769px ) {
+	/* BASE CSS */
+	body {
+		font-size: 14px;
+		background-color: white; /***********************ERASE ******/
+	}
+	.top-wrapper div.header,
+	.wrapper div.main-search,
+	.wrapper div.main-content,
+	.bottom-wrapper div.footer
+	 {
+		width: 980px; 
+		margin: 0px auto;     
+	}
+	/***** T O P  -  W R A P P E R  ****/
+	.top-banner nav {
+		width: 35%;
+		margin-left: 30%;	
+	}
+	/****** M A I N   S E A R C H  ****/
+	.main-search form {
+		width: 65%;		
+	}
+	.main-search ul.searchlinks {
+		width: 50%;
+	}
+
+	/***** M A I N   C O N T E N T ******/
+
+	ul.sister-sites li {
+		font-size: 1em;
+	}
+	.intro div.windows {
+		width: 100%;
+		padding: 0px;
+		margin: 0px auto;
+	}
+
+	div.box.categories {
+		width: 65%;
+		height: 400px;
+		margin-right: 20px;
+		padding-bottom: 10px; 
+	}
+	div.box.mobile,
+	div.box.dvd {
+		width: 27%;
+		height: 180px;
+	}
+	ul.browse ul.bks-cat {
+		display: none;
+	}
+	div.box.sell,
+	div.box.rent {
+		width: 46%;
+		height: 180px;
+	}
+	div.box.rent {
+		margin-right: 20px;
+	}
+	div.box.tv {
+		width: 100%;
+	}
+	div.box.tv > div {
+		float: left;
+	}
+	div.text-holder {
+		width: 47%;
+		margin-right: 40px;
+	}
+	div.video-holder {
+		width: 43%;
+		background: #A6A6A6;
+		text-align: center;
+		padding: 10px 0px;
+	}
+	/****** BOOKS : WRAPPER : MAIN-CONTENT ******/
+	div.main-content.books > div {
+		float: left;
+	}
+
+
+
+	
+
+	
+
+	
+
+
+
+
+}

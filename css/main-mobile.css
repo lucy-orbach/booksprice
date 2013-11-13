@@ -1,0 +1,78 @@
+@media screen and ( min-width: 321px) and ( max-width: 480px) {
+	/* BASE CSS */
+	body {
+ 		background: #FFFFFF url('../images/bgd/bgdBooks480.png') no-repeat center top;
+ 		background-position: 0px 165px;	/*************FIX  ******/
+	}
+	
+	/****  T O P  -  W R A P P E R  ****/
+	div.top-wrapper,
+	.top-wrapper div.header {
+		height: 165px;      
+	}	
+	.home div.bar-left,
+	.innerPage div.bar-right {
+		display: none;
+	}
+	.top-bar > div {
+		width: 100%;
+	}
+	div.top-banner > * {
+		width: 90%;
+		margin: 5px auto;
+	}	
+	/******* M A I N   S E A R C H ****/
+	.main-search input {
+	margin: 3px auto;
+	}
+
+
+
+
+
+
+
+
+
+
+	/******  M A I N  -  C O N T E N T ****/
+	.intro div.third {
+		overflow: hidden;
+		width: 100%;
+		margin: 10px 0px 10px 20px;
+	}
+	div.third > * {
+		float: left;
+	}
+	div.third p {
+		width: 65%;
+		margin-left: 3%;
+		padding-top: 25px;
+	}
+	ul.sister-sites li {
+		font-size: .8em;
+	}
+	ul.sister-sites span.circle {
+		width: 25px;
+		height: 22px;
+	}
+	div.box {
+		width: 90%;
+	}
+	div.box.mobile,
+	div.box.dvd,
+	div.box.sell,
+	div.box.rent {
+		height: 180px;
+	}
+	ul.browse li {
+		width: 45%;	
+	}
+	ul.browse li.title {
+		width: 90%;
+	}
+
+}
+
+
+ 

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="textbooks, books, price, comparison">
+    	<meta name="description" content="Book Price Comparison">
+	<title>Booksprice.com - Books Price Comparison</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main-mobile.css">
+	<link rel="stylesheet" href="css/main-tablet.css">
+	<link rel="stylesheet" href="css/main-desktop.css">
+</head>
+<body class="innerPage">
+	<div class="top-wrapper">
+		<div class="top-bkgd"></div> <!-- bar-bkgd -->
+		<div class="header fcontainer">
+			<div class="top-bar fcontainer">
+				<div class="bar-left">
+					<form  class="search-bar fcontainer" meliod="get"  name="search-barBook" action="compare.do">
+						<input type="text" name="searchType" size="43" placeholder="Enter ISBN, Tile, Keywords or Aulior" />
+						<input type="submit" class="round-search"  name="" value="" />
+					</form >	
+				</div><!-- topbar left -->
+				<div class="bar-right">
+					<ul class="bar-nav fcontainer">
+						<li class="mystuff"><a class="menu-btn" href="#">My Stuff <span class="arrowdown"></span></a>
+							<ul class="mymenu fcontainer">
+								<li class="head">My Stuff</li>
+								<li><a class="borderline" href="this">Book Bag</a></li>
+								<li><a class="borderline" href="this">Pirce Alerts</a></li>
+								<li><a class="borderline" href="this">Twitter Alerts</a></li>
+							</ul>  <!-- my stuff menu -->	
+						</li>
+						<li><a href="#" class="sm tw">Twitter</a></li>
+						<li><a href="#" class="sm gl">Google</a></li>
+						<li><a href="#" class="sm fb">Facebook</a></li>
+					</ul>	
+				</div><!-- topbar-right -->
+			</div><!--topbar -->
+			<div class="top-banner fcontainer">
+				<h1 class="logo"><a href="index.html">Booksprice.com Multiple Book Price Comparison</a></h1>
+				<nav>
+					<ul class="main-nav fcontainer">
+						<li class="buy"><a href="index.html"><span class="circle small">b</span>buy</a></li>
+						<li class="rent"><a href="books.html"><span class="circle small">r</span>rent</a></li>
+					<li class="sell"><span class="circle small">s</span>sell</li>
+					</ul>
+				</nav> <!-- main nav -->
+			</div> <!-- topBanner -->
+		</div> <!-- header -->
+	</div><!-- top wrapper -->
+	<div class="wrapper">
+		<div class="main-content books fcontainer">
+			<h2>Price Comparison for: Surprise Attack Of Jabba lie Puppett: An Origami Yoda Book</h2>
+			<!-- ******************************** S I D E   B A R   *********************************** -->
+			<div class="side-bar">
+				<span class="side-header top">Book Details:</span>
+				
+				<ul class="side-details fcontainer">
+					<li class="bk-holder">
+					<img src="http://ecx.images-amazon.com/images/I/51qv88fYzCL._SL160_.jpg" class="bk-pic" alt="bookcover" /> </li>
+					<li class="label">Authors:</li><li>Tom Angleberger, Harry N. Abrams</li>
+					<li class="label">Format:</li><li>Hardcover</li> 
+					<li class="label">Edition:</li><li><li>First</li>
+					<li class="isbn">ISBN: 1419708589 | 0571419708589</li>
+				</ul>
+				<span class="side-header top">Search Preferences:</span>
+				<label>Include:</label>
+				<form class="condition">
+					<input type="checkbox" name="condition" value="New" checked /><label class="check">New Books</label>
+					<input type="checkbox" name="condition" value="New" checked /><label class="check" >Used Books</label>
+					<input type="checkbox" name="condition" value="New"  /><label class="check" >Rental Books</label>
+					<input type="checkbox" name="condition" value="New"  /><label class="check">eBooks</label>
+					<label>Include Shipping to:</label>
+				</form><!-- condition -->
+				<form class="shipping">
+					<div class="selector-holder">
+						<select id="shipping">
+						  <option value="volvo">U.S.</option>
+						  <option value="saab">U.S. Expedited</option>
+						  <option value="mercedes">U.S. Two Days</option>
+						  <option value="audi">U.S. One Day</option>
+						  <option value="audi">Canada</option>
+						  <option value="audi">Europe</option>
+						</select>
+					</div> <!-- selector-holder shipping -->
+					<label>Show in Currency:</label>
+					<div class="selector-holder">
+						<select id="currency">
+						  <option value="us">U.S. Dollars $</option>
+						  <option value="cdn">CDN $</option>
+						  <option value="uk">U.K. Pounds</option>
+						  <option value="euro">Euro</option>
+						  <option value="aust">Ausulalian $</option>
+						</select>
+					</div> <!-- selector-holder currency-->
+				</form><!-- sort -->
+				<span class="side-header top">Olier Options:</span>
+				<ul class="side-browse">
+					<li><a href="#">Set Email Price Alert</a></li>
+					<li><a href="#">ulack lie Price by RSS</a></li>
+					<li><a href="#">Request Price Tweet</a></li>
+				</ul><!-- side-browse  -->
+				<span class="side-header share-liis">Share liis Search:</span>
+				<ul class="share fcontainer">
+						<li><a href="#" class="sm tw">Twitter</a></li>
+						<li><a href="#" class="sm gl">Google</a></li>
+						<li><a href="#" class="sm fb">Facebook</a></li>
+						<li><a href="#" class="sm em">Email</a></li>
+						<li><a href="#" class="sm rss">RSS</a></li>
+				</ul><!-- share -->	
+			</div><!-- sidebar -->
+			<!-- ********************    P  R  I  C  E     C  H  A  R  T  ************************** -->
+			<div class="chart-holder box top">
+				<div class="head-wrapper">
+					<ul class="chart-header">	
+						<li class="triple">Store Name</li>	
+						<li class="double">Condition</li>	
+						<li class="double">Availability</li>	
+						<li class="single">Price</li>	
+						<li class="single">Shipping</li>	
+						<li class="double">Total Price</li>	 	
+						<li class="triple">Go to Store</li>
+					</ul>
+				</div>
+				<div class="body-wrapper">
+					<ul class="row first">
+						<li class="triple">Amazon.co.uk Marketplace</li>	
+						<li class="double">Used</li>	
+						<li class="double">24 hours</li>	
+						<li class="single">$17.01</li>	
+						<li class="single">$26.95</li>	
+						<li class=" double total">$ 8.99</li>		 
+						<li class="store-link">
+							<button class="goto">Go to <span class="circle"> > </span><br />Amazon.co.uk Marketplace</button>
+						</li>
+						<li class="more">BRAND NEW-NEVER USED-IN PUBLISHER BOX. Don't be fooled by others selling USED books as NEW books. INTERNATIONAL shipping available. </li>
+
+					</ul>
+					<ul class="row">
+						<li class="triple">Textbookrecycling.com</li>	
+						<li class="double">New</li>	
+						<li class="double">1-2 business days</li>	
+						<li class="single">$5.00</li>	
+						<li class="single">$3.99</li>	
+						<li class=" double total">$213.80</li>		 
+						<li class="store-link">
+							<button class="goto">Go to <span class="circle"> > </span><br />Textbookrecycling.com</button>
+						</li>
+					</ul>
+					<ul class="row">
+						<li class="triple">PhatCampus</li>	
+						<li class="double">Used</li>	
+						<li class="double">In Stock</li>	
+						<li class="single">$5.00</li>	
+						<li class="single">$3.99</li>	
+						<li class=" double total">$ 8.99</li>		 
+						<li class="store-link">
+							<button class="goto">Go to <span class="circle"> > </span><br />PhatCampus</button>
+						</li>
+					</ul>
+					<ul class="row">
+						<li class="triple">eBay</li>	
+						<li class="double">Rental</li>	
+						<li class="double">Available</li>	
+						<li class="single">$27.98</li>	
+						<li class="single">$3.99</li>	
+						<li class=" double total">$31.97</li>		 
+						<li class="store-link">
+							<button class="goto">Go to <span class="circle"> > </span><br />eBay</button>
+						</li>
+					</ul>
+					<ul class="row">
+						<li class="triple">ecampus-marketplace</li>	
+						<li class="double">Used</li>	
+						<li class="double">Check at Site</li>	
+						<li class="single">$33.15</li>	
+						<li class="single">$3.99</li>	
+						<li class=" double total">$437.14</li>		 
+						<li class="store-link">
+							<button class="goto">Go to <span class="circle"> > </span><br />ecampus-marketplace</button>
+						</li>
+					</ul>
+					<ul class="row">
+						<li class="triple">bookdepository.com</li>	
+						<li class="double">New</li>	
+						<li class="double"Usually dispatched within 48 hours</li>	
+						<li class="single">$5.00</li>	
+						<li class="single">$3.99</li>	
+						<li class=" double total">$ 40.83</li>		 
+						<li class="store-link">
+							<button class="goto">Go to <span class="circle"> > </span><br />bookdepository.com</button>
+						</li>
+					</ul>
+					<ul class="row">
+						<li class="triple">Amazon</li>	
+						<li class="double">Used</li>	
+						<li class="double">24 hours</li>	
+						<li class="single">$48.49</li>	
+						<li class="single">Free</li>	
+						<li class=" double total">$ 48.49</li>		 
+						<li class="store-link">
+							<button class="goto">Go to <span class="circle"> > </span><br />Amazon</button>
+						</li>
+					</ul>
+					<ul class="row">
+						<li class="triple">Amazon.co.uk Marketplace</li>	
+						<li class="double">Used</li>	
+						<li class="double">24 hours</li>	
+						<li class="single">$17.01</li>	
+						<li class="single">$26.95</li>	
+						<li class=" double total">$ 8.99</li>		 
+						<li class="store-link">
+							<button class="goto">Go to <span class="circle"> > </span><br />Amazon.co.uk Marketplace</button>
+						</li>
+					</ul>
+					<ul class="row">
+						<li class="triple">Textbookrecycling.com</li>	
+						<li class="double">New</li>	
+						<li class="double">1-2 business days</li>	
+						<li class="single">$5.00</li>	
+						<li class="single">$3.99</li>	
+						<li class=" double total">$213.80</li>		 
+						<li class="store-link">
+							<button class="goto">Go to <span class="circle"> > </span><br />Textbookrecycling.com</button>
+						</li>
+					</ul>
+					<ul class="row">
+						<li class="triple">PhatCampus</li>	
+						<li class="double">Used</li>	
+						<li class="double">In Stock</li>	
+						<li class="single">$5.00</li>	
+						<li class="single">$3.99</li>	
+						<li class=" double total">$ 8.99</li>		 
+						<li class="store-link">
+							<button class="goto">Go to <span class="circle"> > </span><br />PhatCampus</button>
+						</li>
+					</ul>
+					<ul class="row">
+						<li class="triple">eBay</li>	
+						<li class="double">Rental</li>	
+						<li class="double">Available</li>	
+						<li class="single">$27.98</li>	
+						<li class="single">$3.99</li>	
+						<li class=" double total">$31.97</li>		 
+						<li class="store-link">
+							<button class="goto">Go to <span class="circle"> > </span><br />eBay</button>
+						</li>
+					</ul>
+					<ul class="row">
+						<li class="triple">ecampus-marketplace</li>	
+						<li class="double">Used</li>	
+						<li class="double">Check at Site</li>	
+						<li class="single">$33.15</li>	
+						<li class="single">$3.99</li>	
+						<li class=" double total">$437.14</li>		 
+						<li class="store-link">
+							<button class="goto">Go to <span class="circle"> > </span><br />ecampus-marketplace</button>
+						</li>
+					</ul>
+					<ul class="row">
+						<li class="triple">bookdepository.com</li>	
+						<li class="double">New</li>	
+						<li class="double"Usually dispatched within 48 hours</li>	
+						<li class="single">$5.00</li>	
+						<li class="single">$3.99</li>	
+						<li class=" double total">$ 40.83</li>		 
+						<li class="store-link">
+							<button class="goto">Go to <span class="circle"> > </span><br />bookdepository.com</button>
+						</li>
+					</ul>
+					<ul class="row">
+						<li class="triple">Amazon</li>	
+						<li class="double">Used</li>	
+						<li class="double">24 hours</li>	
+						<li class="single">$48.49</li>	
+						<li class="single">Free</li>	
+						<li class=" double total">$ 48.49</li>		 
+						<li class="store-link">
+							<button class="goto">Go to <span class="circle"> > </span><br />Amazon</button>
+						</li>
+					</ul>
+				</div>	<!-- body-wrapper -->
+			</div><!-- chart-holder --> 
+
+		</div> <!-- main content -->
+	</div> <!--wrapper-->
+
+
+	<div class="bottom-wrapper">
+		<div class="footer">
+			<ul class="nav-footer">
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">link2us</a></li>
+				<li><a href="#">contact us</a></li>
+				<li><a href="#">privacy</a></li>
+				<li><a href="#">terms of use</a></li>
+			</ul>
+			<span class="footnote">©2004-2013 BooksPrice LLC All rights reserved.</span>
+		</div> <!-- footer -->
+	</div> <!-- bottom wrapper -->
+
+</body>
+</html>

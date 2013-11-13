@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="textbooks, books, price, comparison">
+    	<meta name="description" content="Book Price Comparison">
+	<title>Booksprice.com - Books Price Comparison</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main-mobile.css">
+	<link rel="stylesheet" href="css/main-tablet.css">
+	<link rel="stylesheet" href="css/main-desktop.css">
+</head>
+<body class="home">
+	<div class="top-wrapper">
+		<div class="top-bkgd"></div> <!-- bar-bkgd -->
+		<div class="header fcontainer">
+			<div class="top-bar fcontainer">
+				<div class="bar-left">
+					<form  class="search-bar fcontainer" method="get"  name="search-barBook" action="compare.do">
+						<input type="text" name="searchType" size="43" placeholder="Enter ISBN, Tile, Keywords or Author" />
+						<input type="submit" class="round-search"  name="" value="" />
+					</form >	
+				</div><!-- topbar left -->
+				<div class="bar-right">
+					<ul class="bar-nav fcontainer">
+						<li class="mystuff"><a class="menu-btn" href="#">My Stuff <span class="arrowdown"></span></a>
+							<ul class="mymenu fcontainer">
+								<li class="head">My Stuff</li>
+								<li><a class="borderline" href="this">Book Bag</a></li>
+								<li><a class="borderline" href="this">Pirce Alerts</a></li>
+								<li><a class="borderline" href="this">Twitter Alerts</a></li>
+							</ul>  <!-- my stuff menu -->	
+						</li>
+						<li><a href="this" class="sm tw">Twitter</a></li>
+						<li><a href="this" class="sm gl">Google</a></li>
+						<li><a href="this" class="sm fb">Facebook</a></li>
+					</ul>	
+				</div><!-- topbar-right -->
+			</div><!--topbar -->
+			<div class="top-banner fcontainer">
+				<h1 class="logo"><a href="index.html">Booksprice.com Multiple Book Price Comparison</a></h1>
+				<nav>
+					<ul class="main-nav fcontainer">
+						<li class="buy"><span class="circle small">b</span>buy</li>
+						<li class="rent"><a href="books.html"><span class="circle small">r</span>rent</a></li>
+					<li class="sell"><a href="price.html"><span class="circle small">s</span>sell</a></li>
+					</ul>
+				</nav> <!-- main nav -->
+			</div> <!-- topBanner -->
+		</div> <!-- header -->
+	</div><!-- top wrapper -->
+
+	<div class="wrapper">
+		<div class="search-bkgd">
+			<div class="main-search">
+				<h2>Compare Book Prices and Save Money on Books &amp; Textbooks</h2>
+				
+				
+				<form class="srch-basic fcontainer"  name="searchboxBook" action="compare.do" method="get">
+					<input class="txt" type="text" name="searchType" size="40" placeholder="Enter ISBN, Tile, Keywords or Author" />
+					<input class="search-btn" type="submit" name="" value="" />
+				</form>
+				<!-- CHANGE CLASSES  W JAVASCRIPT -->
+				<form class="srch-adv fcontainer hide" name="searchboxBook" action="compare.do" method="get">
+					<input class="txt" type="text" name="searchType" size="40" placeholder="Enter Tile/Keywords" />
+					<input class="txt" type="text" name="searchType" size="40" placeholder="Enter Author" />
+					<input class="txt" type="text" name="searchType" size="40" placeholder="Enter Publisher" />
+					<ul class="format fcontainer">
+						<li><input type="radio" name="format" value="Hardcover" /> Hardcover</li>
+						<li><input type="radio" name="format" value="Paperback"  /> Paperback</li>
+						<li><input type="radio" name="format" value="Digital" /> Digital</li>
+						<li><input type="radio" name="format" value="Audio" /> Audio</li>
+					</ul>
+					<input class="search-btn" type="submit" name="search" value="" />
+				</form>
+			
+				<ul class="searchlinks fcontainer">
+					<li><a href="this">Advanced Searches</a></li>
+					<li><a href="this">Browse by Category</a></li>
+				</ul><!-- searchlinks -->
+			</div><!-- main search -->
+		</div> <!-- search-bkgd -->
+		<div class="main-content fcontainer">
+			<div class="intro fcontainer">
+				<p>Compare book prices to find the best price for new, used and rental books and college textbooks at the major Online Stores.</p>
+				<p>Our Book Price Comparison is free, objective and easy to use:</p>
+				<div class="fcontainer">
+					<div class="third">
+						<span class="circle big  search">Search</span>
+						<p>Use the Search Box above to find the book you are looking for</p>
+					</div><!-- third -->
+					<div class="third">
+						<span class="circle big compare">Compare</span>
+						<p>Click onthe Compare Price button of the book you would like to buy</p>
+					</div><!-- third -->
+					<div class="third">
+						<span class="circle big save">Save</span>
+						<p>Use our Comparison Charts to find the lowest price and Save!</p>
+					</div><!-- third -->
+				</div>
+				<ul class="sister-sites fcontainer">
+					<li>Compare prices at:</li>
+					<li><a href="http://www.booksprice.co.uk"><span class="circle small">uk</span>booksprice.co.uk</a></li>
+					<li><a href="http://www.booksprice.co.nz"><span class="circle small">nz</span>booksprice.co.nz</a></li>
+				</ul><!-- sister-sites -->
+			
+			</div><!-- intro -->
+			<div class="windows fcontainer">
+				<div class="box categories fcontainer">
+					<ul class="browse fcontainer">
+						<li class="title">Browse by Category:</li>
+						<li><span class="circle small">t</span>textbooks</li>
+						<li><a href="this"><span class="circle small">b</span>books</a></li><!-- bks-categories -->
+					</ul>
+					<div class="txt-cat hide">
+						<ul class="txt-list">
+							<li><a href="this">Arts &amp; Photography</a></li>
+							<li><a href="this">Business &amp; Investing</a></li>
+							<li><a href="this">Computers &amp; Technology</a></li>
+							<li><a href="this">Education &amp; Reference</a></li>
+							<li><a href="this">K-12 Teaching Resources</a></li>
+							<li><a href="this">Medical</a></li>
+							<li><a href="this">Professional &amp; Technical</a></li>
+							<li><a href="this">Science &amp; Math</a></li>
+							<li><a href="this">Test Prep &amp; Study Guides</a></li>
+						</ul>
+					</div><!-- txt-categories -->
+					<div class="bks-cat ">
+						<ul class="bks-list">
+							<li><a href="this">Arts &amp; Photography</a></li>
+							<li><a href="this">Biographies &amp; Memoirs</a></li>
+							<li><a href="this">Business &amp; Investing</a></li>
+							<li><a href="this">Children's Books</a></li>
+							<li><a href="this">Comics &amp; Graphic</a></li>
+							<li><a href="this">Computers &amp; Internet</a></li>
+							<li><a href="this">Cooking, Food &amp; Wine</a></li>
+							<li><a href="this">Entertainment</a></li>
+							<li><a href="this">History</a></li>
+							<li><a href="this">Home &amp; Garden</a></li>
+							<li><a href="this">Law</a></li>
+							<li><a href="this">Literature &amp; Fiction</a></li>
+							<li><a href="this">Libros</a></li>
+							<li><a href="this">Medicine</a></li>
+							<li><a href="this">Mystery &amp; Thrillers</a></li>
+							<li><a href="this">Nonfiction</a></li>
+							<li><a href="this">Outdoors &amp; Nature</a></li>
+							<li><a href="this">Parenting &amp; Families</a></li>
+							<li><a href="this">Poetry</a></li>
+							<li><a href="this">Professional &amp; Technical</a></li>
+							<li><a href="this">Reference</a></li>
+							<li><a href="this">Religion &amp; Spirituality</a></li>
+							<li><a href="this">Romance</a></li>
+							<li><a href="this">Science</a></li>
+							<li><a href="this">Science Fiction &amp; Fantasy</a></li>
+							<li><a href="this">Sports</a></li>
+							<li><a href="this">Teens</a></li>
+							<li><a href="this">Textbooks</a></li>
+							<li><a href="this">Travel</a></li>
+						</ul>
+					</div><!-- bks-cat -->	
+				</div><!-- browse by categories -->
+				<div class="box mobile dim">
+					<h3>Free Mobile Apps</h3>
+					<p>Download our app and compare bok prices on the go!</p>
+					<span class="box-link"><a class="blue-link" href="this">Download now >></a></span>
+				</div><!--mobile -->
+				<div class="box dvd dim">
+					<h3>Compare DVD prices</h3>
+					<p>We help you find the lowest price for Movies, TV Series and Documentaries.</p>
+					<span class="box-link"><a class="blue-link" href="this">Star comparing now >></a></span>
+
+				</div><!--dvd -->
+				<div class="box rent dim">
+					<h3>Rental Textbooks are affordable and convenient</h3> 
+					<p>Textbook rental prices vary from one third to up to 75% of the new textbook cost.Booksprice can help you find the best rental price for  the  textbooks you need this semester.</p>
+					<span class="box-link"><a class="blue-link" href="this">Star comparing now >></a></span>
+				</div><!--rent -->
+				<div class="box sell dim">
+					<h3>Books Buyback Programs gives you Cash for your Used Textbooks</h3>
+					<p>Booksprice’s Book BuyBack Comparison helps you to easily compare what the online retailers are paying and find the best price for your used textbooks.</p>
+					<span class="box-link"><a class="blue-link" href="this">Star comparing now >></a></span>
+				</div><!-- sell -->
+				<div class="box tv fcontainer dim">
+					<div class="text-holder">
+						<h3>Booksprice helps you Save on College Expenses</h3>
+						<p>As seen on TV... Booksprice.com is the smart shopping tip that can save you hundreds of dollars.</p>
+					</div><!-- text holder -->
+					<div class="video-holder">
+						<object id="otvPlayer" width="400" height="268"><param name="movie" value="http://cdn.abclocal.go.com/static/flash/embeddedPlayer/swf/otvEmLoader.swf?version=fw1000&station=wpvi&section=&mediaId=6992071&parentId=6991896&cdnRoot=http://cdn.abclocal.go.com&webRoot=http://abclocal.go.com&configPath=/util/&site=" ></param><param name="allowScriptAccess" value="always"></param><param name="allowNetworking" value="all"></param><param name="allowFullScreen" value="true"></param><embed id="otvPlayer" width="400" height="268" type="application/x-shockwave-flash"	allowscriptaccess="always" allownetworking="all" allowfullscreen="true"	src="http://cdn.abclocal.go.com/static/flash/embeddedPlayer/swf/otvEmLoader.swf?version=fw1000&station=wpvi&section=&mediaId=6992071&parentId=6991896&cdnRoot=http://cdn.abclocal.go.com&webRoot=http://abclocal.go.com&configPath=/util/&site="></embed></object>
+					</div><!-- video holder -->
+				</div><!-- tv -->
+			</div><!-- windows -->
+
+		</div> <!-- main content -->
+	</div> <!--wrapper-->
+
+
+	<div class="bottom-wrapper">
+		<div class="footer">
+			<ul class="nav-footer">
+				<li><a href="this">FAQ</a></li>
+				<li><a href="this">link2us</a></li>
+				<li><a href="this">contact us</a></li>
+				<li><a href="this">privacy</a></li>
+				<li><a href="this">terms of use</a></li>
+			</ul>
+			<span class="footnote">©2004-2013 BooksPrice LLC All rights reserved.</span>
+		</div> <!-- footer -->
+	</div> <!-- bottom wrapper -->
+</body>
+</html>
