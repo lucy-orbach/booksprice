@@ -17,7 +17,7 @@
 		<div class="header fcontainer">
 			<div class="top-bar fcontainer">
 				<div class="bar-left">
-					<form  class="search-bar fcontainer" meliod="get"  name="search-barBook" action="compare.do">
+					<form  class="search-bar form-bkgd fcontainer" meliod="get"  name="search-bar" action="compare.do">
 						<input type="text" name="searchType" size="43" placeholder="Enter ISBN, Tile, Keywords or Aulior" />
 						<input type="submit" class="round-search"  name="" value="" />
 					</form >	
@@ -25,7 +25,7 @@
 				<div class="bar-right">
 					<ul class="bar-nav fcontainer">
 						<li class="mystuff"><a class="menu-btn" href="#">My Stuff <span class="arrowdown"></span></a>
-							<ul class="mymenu fcontainer">
+							<ul class="mymenu dropdown fcontainer">
 								<li class="head">My Stuff</li>
 								<li><a class="borderline" href="this">Book Bag</a></li>
 								<li><a class="borderline" href="this">Pirce Alerts</a></li>
@@ -49,70 +49,117 @@
 				</nav> <!-- main nav -->
 			</div> <!-- topBanner -->
 		</div> <!-- header -->
-	</div><!-- top wrapper -->
+	</div><!-- *****  T  O  P    W  R  A  P  P   E  R   ***** -->
 	<div class="wrapper">
-		<div class="main-content books fcontainer">
-			<h2>Price Comparison for: Surprise Attack Of Jabba lie Puppett: An Origami Yoda Book</h2>
-			<!-- ******************************** S I D E   B A R   *********************************** -->
-			<div class="side-bar">
-				<span class="side-header top">Book Details:</span>
-				
-				<ul class="side-details fcontainer">
-					<li class="bk-holder">
-					<img src="http://ecx.images-amazon.com/images/I/51qv88fYzCL._SL160_.jpg" class="bk-pic" alt="bookcover" /> </li>
-					<li class="label">Authors:</li><li>Tom Angleberger, Harry N. Abrams</li>
-					<li class="label">Format:</li><li>Hardcover</li> 
-					<li class="label">Edition:</li><li><li>First</li>
-					<li class="isbn">ISBN: 1419708589 | 0571419708589</li>
+		<div class="books-bkgd">
+			<div class="price-intro fcontainer">
+				<div class="bk-holder intro">
+					<img src="http://ecx.images-amazon.com/images/I/51qv88fYzCL._SL160_.jpg" class="bk-pic" alt="bookcover" /> 
+				</div>
+				<h3><em><span class="circle small">P</span>rice Comparison for:</em> Surprise Attack Of Jabba lie Puppett: An Origami Yoda Book Surprise Attack Of</h3>
+				<ul class="bk-details  fcontainer">
+					<li>Authors: Tom Angleberger, Harry N. Abrams</li>
+					<li>Hardcover | First Edition</li> 
+					<li>ISBN: 1419708589 | 0571419708589</li>
 				</ul>
-				<span class="side-header top">Search Preferences:</span>
-				<label>Include:</label>
-				<form class="condition">
-					<input type="checkbox" name="condition" value="New" checked /><label class="check">New Books</label>
-					<input type="checkbox" name="condition" value="New" checked /><label class="check" >Used Books</label>
-					<input type="checkbox" name="condition" value="New"  /><label class="check" >Rental Books</label>
-					<input type="checkbox" name="condition" value="New"  /><label class="check">eBooks</label>
-					<label>Include Shipping to:</label>
-				</form><!-- condition -->
-				<form class="shipping">
-					<div class="selector-holder">
-						<select id="shipping">
-						  <option value="volvo">U.S.</option>
-						  <option value="saab">U.S. Expedited</option>
-						  <option value="mercedes">U.S. Two Days</option>
-						  <option value="audi">U.S. One Day</option>
-						  <option value="audi">Canada</option>
-						  <option value="audi">Europe</option>
-						</select>
-					</div> <!-- selector-holder shipping -->
-					<label>Show in Currency:</label>
-					<div class="selector-holder">
-						<select id="currency">
-						  <option value="us">U.S. Dollars $</option>
-						  <option value="cdn">CDN $</option>
-						  <option value="uk">U.K. Pounds</option>
-						  <option value="euro">Euro</option>
-						  <option value="aust">Ausulalian $</option>
-						</select>
-					</div> <!-- selector-holder currency-->
-				</form><!-- sort -->
-				<span class="side-header top">Olier Options:</span>
-				<ul class="side-browse">
-					<li><a href="#">Set Email Price Alert</a></li>
-					<li><a href="#">ulack lie Price by RSS</a></li>
-					<li><a href="#">Request Price Tweet</a></li>
-				</ul><!-- side-browse  -->
-				<span class="side-header share-liis">Share liis Search:</span>
-				<ul class="share fcontainer">
-						<li><a href="#" class="sm tw">Twitter</a></li>
-						<li><a href="#" class="sm gl">Google</a></li>
-						<li><a href="#" class="sm fb">Facebook</a></li>
-						<li><a href="#" class="sm em">Email</a></li>
-						<li><a href="#" class="sm rss">RSS</a></li>
-				</ul><!-- share -->	
-			</div><!-- sidebar -->
-			<!-- ********************    P  R  I  C  E     C  H  A  R  T  ************************** -->
-			<div class="chart-holder box top">
+				<div class="op-container">
+					<ul class="price-nav fcontainer">
+						<li class="tab">
+							<a class="show-op" href="this">Set Preferences</a>
+						</li>
+						<li class="tab active">
+							<a class="show-op" href="this">Set Alerts </a>
+						</li>
+						<li>
+							<ul class="share fcontainer">
+								<li><a href="#" class="sm tw">Twitter</a></li>
+								<li><a href="#" class="sm gl">Google</a></li>
+								<li><a href="#" class="sm fb">Facebook</a></li>
+								<li><a href="#" class="sm em">Email</a></li>
+								<li><a href="#" class="sm rss">RSS</a></li>
+							</ul><!-- share -->	
+						</li>
+					</ul> <!-- price-nav -->
+					<ul class="pref fcontainer hide">
+						<li class="bk-cond">Include:
+							<form>
+								<ul class="condition fcontainer">
+									<li>
+										<input type="checkbox" name="condition" value="New" checked /><label>New Books</label>
+									</li>
+									<li>
+										<input type="checkbox" name="condition" value="Used" checked /><label>Used Books</label>
+									</li>
+									<li>
+										<input type="checkbox" name="condition" value="Rental" checked /><label>Rental Books</label>
+									</li>
+									<li>
+										<input type="checkbox" name="condition" value="eBook" checked  /><label>eBooks</label>
+									</li>
+								</ul>
+							</form><!-- condition -->
+						</li>
+						<li>Calculate Shipping to:
+							<form class="shipping">
+								<div class="selector-holder form-bkgd">
+									<select>
+						  				<option value="U.S.">U.S.</option>
+						  				<option value="U.S. Expedited">U.S. Expedited</option>
+						  				<option value="U.S. Two Days">U.S. Two Days</option>
+						  				<option value="U.S. One Day">U.S. One Day</option>
+						  				<option value="Canada">Canada</option>
+						  				<option value="Europe">Europe</option>
+									</select>
+								</div> <!-- selector-holder shipping -->
+							</form>
+						</li>
+						<li>Show in Currency:
+							<form class="currency">
+								<div class="selector-holder form-bkgd">
+									<select id="currency" class="sort-by">
+					  					<option value="us">U.S. Dollars $</option>
+					  					<option value="cdn">CDN $</option>			
+					  					<option value="uk">U.K. Pounds</option>
+						  				<option value="euro">Euro</option>
+						  				<option value="aust">Ausulalian $</option>
+									</select>
+								</div> <!-- selector-holder currency-->
+							</form><!-- currency -->
+						</li>
+					</ul><!-- pref -->
+					
+					<div class="alert-op">
+						<ul class="alert-menu">
+							<li class="active"><a href="#">Set Email Price Alert</a></li>
+							<li><a href="#">Track the Price by RSS</a></li>
+							<li><a href="#">Request Price Tweet</a></li>
+						</ul><!-- side-browse  -->
+						<div class="setalert">
+							<form>
+								<ul class="email-alert">
+									<li>
+										<label>Send me an Email Alert when this item's price drops to or below $ </label>
+										<input type="text" size="8" name="searchType" placeholder=" 0.00" />
+									</li>
+									<li>
+										<input type="checkbox" name="condition" value="include" checked />
+										<label>Include Estimated Shipping </label>
+									</li>
+									<li>
+										<input type="text" size="25" name="searchType" placeholder="Enter Email" />
+										<input type="text" size="25" name="searchType" placeholder="Confirm Email" />
+										<input type="submit" value="Submit" class="button" />
+									</li>
+								</ul><!-- email alert  -->
+							</form>
+						</div><!-- set alert -->
+					</div><!-- alert-op -->
+				</div> <!-- op-container -->	
+			</div><!--books intro -->
+		</div><!-- books-bgd -->
+		<!-- ********************    P  R  I  C  E     C  H  A  R  T  ************************** -->
+		<div class="books-content fcontainer">
+			<div class="chart-holder box">
 				<div class="head-wrapper">
 					<ul class="chart-header">	
 						<li class="triple">Store Name</li>	
@@ -135,7 +182,7 @@
 						<li class="store-link">
 							<button class="goto">Go to <span class="circle"> > </span><br />Amazon.co.uk Marketplace</button>
 						</li>
-						<li class="more">BRAND NEW-NEVER USED-IN PUBLISHER BOX. Don't be fooled by others selling USED books as NEW books. INTERNATIONAL shipping available. </li>
+						<li class="more"><span class="circle x-sm">-</span>BRAND NEW-NEVER USED-IN PUBLISHER BOX. Don't be fooled by others selling USED books as NEW books. INTERNATIONAL shipping available. </li>
 
 					</ul>
 					<ul class="row">

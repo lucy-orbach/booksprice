@@ -1,17 +1,24 @@
 @media screen and ( min-width: 321px) and ( max-width: 480px) {
-	/* BASE CSS */
+	/********  B A S I C   E L E M E N T S  ******* */ 
 	body {
  		background: #FFFFFF url('../images/bgd/bgdBooks480.png') no-repeat center top;
  		background-position: 0px 165px;	/*************FIX  ******/
 	}
-	
-	/****  T O P  -  W R A P P E R  ****/
-	div.top-wrapper,
-	.top-wrapper div.header {
+	/********* G E N E R I C    C L A S S E S  *****/
+
+	/********* <a href> L I N K    C L A S S E S  *****/
+
+	/******   B U T T O N S   S T Y L E S *****/
+
+	/*  ICONS STYLES */
+
+	/******   F O O T E R     *****/
+
+	/*******  H E A D E R    ********/
+	div.top-wrapper, .top-wrapper div.header {
 		height: 165px;      
 	}	
-	.home div.bar-left,
-	.innerPage div.bar-right {
+	.home div.bar-left, .innerPage div.bar-right {
 		display: none;
 	}
 	.top-bar > div {
@@ -21,21 +28,11 @@
 		width: 90%;
 		margin: 5px auto;
 	}	
-	/******* M A I N   S E A R C H ****/
+	/********  M  A  I  N     C  O  N  T  E  N  T   *******/  
+	/* H O M E P A G E  */
 	.main-search input {
 	margin: 3px auto;
 	}
-
-
-
-
-
-
-
-
-
-
-	/******  M A I N  -  C O N T E N T ****/
 	.intro div.third {
 		overflow: hidden;
 		width: 100%;
@@ -59,18 +56,39 @@
 	div.box {
 		width: 90%;
 	}
-	div.box.mobile,
-	div.box.dvd,
-	div.box.sell,
+	div.box.mobile, div.box.dvd, div.box.sell,
 	div.box.rent {
 		height: 180px;
 	}
-	ul.browse li {
-		width: 45%;	
+	div.box.categories {
+		width: 430px;
 	}
-	ul.browse li.title {
-		width: 90%;
+	.categories h3 {
+	width: 100%;
 	}
+	.categories ul.browse {
+		width: 100%;	
+	}
+	#list-container {
+		width: 430px;
+		height: 300px;	
+	}
+	div.txt-slide, div.bks-slide {
+		width: 430px;
+	}
+	/* BOOKS RESULTS */
+
+	/* PRICE CHART */
+
+	/* SIDE BAR */
+	
+	
+	
+
+	
+	
+
+	
 
 }
 

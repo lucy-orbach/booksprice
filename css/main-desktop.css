@@ -1,32 +1,43 @@
 @media screen and ( min-width: 769px ) {
-	/* BASE CSS */
+	/********  B A S I C   E L E M E N T S  ******* */ 
 	body {
 		font-size: 14px;
 		background-color: white; /***********************ERASE ******/
 	}
 	.top-wrapper div.header,
+	.wrapper div.books-intro,
+	.wrapper div.books-content,
 	.wrapper div.main-search,
 	.wrapper div.main-content,
-	.bottom-wrapper div.footer
-	 {
+	.wrapper div.price-intro,
+	.bottom-wrapper div.footer {
 		width: 980px; 
 		margin: 0px auto;     
 	}
-	/***** T O P  -  W R A P P E R  ****/
+	/********* G E N E R I C    C L A S S E S  *****/
+
+	/********* <a href> L I N K    C L A S S E S  *****/
+
+	/******   B U T T O N S   S T Y L E S *****/
+
+	/*  ICONS STYLES */
+
+	/******   F O O T E R    *****/
+
+	/******* H E A D E R     ********/
 	.top-banner nav {
 		width: 35%;
 		margin-left: 30%;	
 	}
-	/****** M A I N   S E A R C H  ****/
+	
+	/********  M  A  I  N     C  O  N  T  E  N  T   *******/  
+	/* H O M E P A G E  */
 	.main-search form {
 		width: 65%;		
 	}
 	.main-search ul.searchlinks {
 		width: 50%;
 	}
-
-	/***** M A I N   C O N T E N T ******/
-
 	ul.sister-sites li {
 		font-size: 1em;
 	}
@@ -35,20 +46,48 @@
 		padding: 0px;
 		margin: 0px auto;
 	}
-
 	div.box.categories {
-		width: 65%;
+		width: 637px;
 		height: 400px;
 		margin-right: 20px;
 		padding-bottom: 10px; 
+	}
+	#list-container {
+		width: 617px;
+		height: 225px;
+		position: relative;
+		overflow: hidden;
+	}
+	div.txt-slide,
+	div.bks-slide {
+		width: 617px;
+		float: left;
+	}
+	div.txt-slide.in,
+	div.bks-slide.in {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	transition: left 0.5s;
+	-webkit-transition: left 1s; /* Safari */	
+	}
+
+	div.txt-slide.out {
+	position: absolute;
+	left: -620px;
+	transition: left 0.5s;
+	-webkit-transition: left 1s; /* Safari */
+	}
+	div.bks-slide.out {
+	position: absolute;
+	left: 620px;
+	transition: left 0.5s;
+	-webkit-transition: left 1s; /* Safari */
 	}
 	div.box.mobile,
 	div.box.dvd {
 		width: 27%;
 		height: 180px;
-	}
-	ul.browse ul.bks-cat {
-		display: none;
 	}
 	div.box.sell,
 	div.box.rent {
@@ -74,10 +113,15 @@
 		text-align: center;
 		padding: 10px 0px;
 	}
-	/****** BOOKS : WRAPPER : MAIN-CONTENT ******/
-	div.main-content.books > div {
-		float: left;
+	/* BOOKS RESULTS */
+	.wrapper div.books-content {
+		padding-top: 25px;
 	}
+	/* PRICE CHART */
+	
+
+	/* SIDE BAR */
+
 
 
 

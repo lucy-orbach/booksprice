@@ -2,12 +2,24 @@
 
 @media screen and ( min-width: 481px ) {
 
-	/***** T O P  -  W R A P P E R ****/
-	div.top-wrapper,
+	/********  B A S I C   E L E M E N T S  ******* */
+
+	/********* G E N E R I C    C L A S S E S  *****/
+
+	/********* <a href> L I N K    C L A S S E S  *****/
+
+	/******   B U T T O N S   S T Y L E S *****/
+
+	/*  ICONS STYLES */
+
+	/******   F O O T E R    *****/
+
+	/******* H E A D E R    ********/
+	div.top-wrapper, 
 	.top-wrapper div.header {
 		height: 120px;      
 	}	
-	.home div.bar-left,
+	.home div.bar-left, 
 	.innerPage div.bar-right {
 		display: block;
 	}
@@ -19,8 +31,15 @@
 		margin-top: 20px;
 		margin-left: 17%;	
 	}
-	
-	/******   M  A I N   S E A R C H  ******/
+	/* TOP-BAR */
+
+	/* TOP-BANNER */
+
+	/********  M  A  I  N     C  O  N  T  E  N  T   *******/  
+
+	/* GENERIC */
+
+	/* H O M E P A G E  */
 	.main-search form {
 		margin-top: 50px;
 		padding: 30px;
@@ -36,11 +55,9 @@
 	}
 	input.search-btn {
 		position: absolute;
-		bottom: 20px;
+		bottom: 30px;
 		right: 20px;
 	}
-	
-	/****  M A I N  -  C O N T E N T ******/
 	.intro div.third {
 		width: 30%;
 		margin: 10px 0px 10px 20px;
@@ -74,21 +91,27 @@
 	div.box {
 		float: left;
 	}
-	div.box.categories,
-	div.box.tv {
+	div.box.categories, div.box.tv {
 		width: 95%;
 	}
-	div.box.mobile,
-	div.box.dvd,
-	div.box.sell,
-	div.box.rent  {
+	div.box.mobile,  div.box.dvd,
+	div.box.sell, div.box.rent  {
 		width: 46%;
 		height: 200px;
 	}
-	div.box.mobile,
-	div.box.rent {
+	div.box.mobile, div.box.rent {
 		margin-right: 10px;
 	}
+	/* BOOKS RESULTS */
+
+	/* PRICE CHART */
+
+	/* SIDE BAR */
+
+	/******   M  A I N   S E A R C H  ******/
+	
+	/****  M A I N  -  C O N T E N T ******/
+	
 	.piano
 	-webkit-transition: opacity 0.3s ease-in-out;
 -moz-transition: opacity 0.3s ease-in-out;

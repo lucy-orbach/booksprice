@@ -17,15 +17,15 @@
 		<div class="header fcontainer">
 			<div class="top-bar fcontainer">
 				<div class="bar-left">
-					<form  class="search-bar fcontainer" method="get"  name="search-barBook" action="compare.do">
-						<input type="text" name="searchType" size="43" placeholder="Enter ISBN, Tile, Keywords or Author" />
-						<input type="submit" class="round-search"  name="" value="" />
+					<form  class="search-bar form-bkgd fcontainer" method="get"  name="search-bar" action="compare.do">
+						<input type="text" name="searchType" size="40" placeholder="Enter ISBN, Tile, Keywords or Author" />
+						<input type="submit" class="round-search"  name="search" value="" />
 					</form >	
 				</div><!-- topbar left -->
 				<div class="bar-right">
 					<ul class="bar-nav fcontainer">
 						<li class="mystuff"><a class="menu-btn" href="#">My Stuff <span class="arrowdown"></span></a>
-							<ul class="mymenu fcontainer">
+							<ul class="mymenu dropdown fcontainer">
 								<li class="head">My Stuff</li>
 								<li><a class="borderline" href="this">Book Bag</a></li>
 								<li><a class="borderline" href="this">Pirce Alerts</a></li>
@@ -55,8 +55,6 @@
 		<div class="search-bkgd">
 			<div class="main-search">
 				<h2>Compare Book Prices and Save Money on Books &amp; Textbooks</h2>
-				
-				
 				<form class="srch-basic fcontainer"  name="searchboxBook" action="compare.do" method="get">
 					<input class="txt" type="text" name="searchType" size="40" placeholder="Enter ISBN, Tile, Keywords or Author" />
 					<input class="search-btn" type="submit" name="" value="" />
@@ -76,8 +74,9 @@
 				</form>
 			
 				<ul class="searchlinks fcontainer">
-					<li><a href="this">Advanced Searches</a></li>
-					<li><a href="this">Browse by Category</a></li>
+					<li id="adv" class="pointer">Advanced Search</li>
+					<li id="base" class="pointer hide">Basic Search</li>
+					<li id="linkCat" class="pointer">Browse by Category</li>
 				</ul><!-- searchlinks -->
 			</div><!-- main search -->
 		</div> <!-- search-bkgd -->
@@ -106,59 +105,62 @@
 				</ul><!-- sister-sites -->
 			
 			</div><!-- intro -->
+			<a name="BrowseByCategories"></a>
 			<div class="windows fcontainer">
-				<div class="box categories fcontainer">
+				<div  class="box categories fcontainer">
+					<h3>Browse by Category:</h3>
 					<ul class="browse fcontainer">
-						<li class="title">Browse by Category:</li>
-						<li><span class="circle small">t</span>textbooks</li>
-						<li><a href="this"><span class="circle small">b</span>books</a></li><!-- bks-categories -->
+						<li id="txtlink" class="pointer active"><span class="circle small">t</span>textbooks</li>
+						<li id="bkslink" class="pointer"><span class="circle small">b</span>books</li>
 					</ul>
-					<div class="txt-cat hide">
-						<ul class="txt-list">
-							<li><a href="this">Arts &amp; Photography</a></li>
-							<li><a href="this">Business &amp; Investing</a></li>
-							<li><a href="this">Computers &amp; Technology</a></li>
-							<li><a href="this">Education &amp; Reference</a></li>
-							<li><a href="this">K-12 Teaching Resources</a></li>
-							<li><a href="this">Medical</a></li>
-							<li><a href="this">Professional &amp; Technical</a></li>
-							<li><a href="this">Science &amp; Math</a></li>
-							<li><a href="this">Test Prep &amp; Study Guides</a></li>
-						</ul>
-					</div><!-- txt-categories -->
-					<div class="bks-cat ">
-						<ul class="bks-list">
-							<li><a href="this">Arts &amp; Photography</a></li>
-							<li><a href="this">Biographies &amp; Memoirs</a></li>
-							<li><a href="this">Business &amp; Investing</a></li>
-							<li><a href="this">Children's Books</a></li>
-							<li><a href="this">Comics &amp; Graphic</a></li>
-							<li><a href="this">Computers &amp; Internet</a></li>
-							<li><a href="this">Cooking, Food &amp; Wine</a></li>
-							<li><a href="this">Entertainment</a></li>
-							<li><a href="this">History</a></li>
-							<li><a href="this">Home &amp; Garden</a></li>
-							<li><a href="this">Law</a></li>
-							<li><a href="this">Literature &amp; Fiction</a></li>
-							<li><a href="this">Libros</a></li>
-							<li><a href="this">Medicine</a></li>
-							<li><a href="this">Mystery &amp; Thrillers</a></li>
-							<li><a href="this">Nonfiction</a></li>
-							<li><a href="this">Outdoors &amp; Nature</a></li>
-							<li><a href="this">Parenting &amp; Families</a></li>
-							<li><a href="this">Poetry</a></li>
-							<li><a href="this">Professional &amp; Technical</a></li>
-							<li><a href="this">Reference</a></li>
-							<li><a href="this">Religion &amp; Spirituality</a></li>
-							<li><a href="this">Romance</a></li>
-							<li><a href="this">Science</a></li>
-							<li><a href="this">Science Fiction &amp; Fantasy</a></li>
-							<li><a href="this">Sports</a></li>
-							<li><a href="this">Teens</a></li>
-							<li><a href="this">Textbooks</a></li>
-							<li><a href="this">Travel</a></li>
-						</ul>
-					</div><!-- bks-cat -->	
+					<div id="list-container">
+						<div class="txt-slide in">
+							<ul class="txt-list">
+								<li><a href="books.html">Arts &amp; Photography</a></li>
+								<li><a href="books.html">Business &amp; Investing</a></li>
+								<li><a href="books.html">Computers &amp; Technology</a></li>
+								<li><a href="books.html">Education &amp; Reference</a></li>
+								<li><a href="books.html">K-12 Teaching Resources</a></li>
+								<li><a href="books.html">Medical</a></li>
+								<li><a href="books.html">Professional &amp; Technical</a></li>
+								<li><a href="books.html">Science &amp; Math</a></li>
+								<li><a href="books.html">Test Prep &amp; Study Guides</a></li>
+							</ul>
+						</div><!-- txt-categories -->
+						<div class="bks-slide out">
+							<ul class="bks-list">
+								<li><a href="books.html">Arts &amp; Photography</a></li>
+								<li><a href="books.html">Biographies &amp; Memoirs</a></li>
+								<li><a href="books.html">Business &amp; Investing</a></li>
+								<li><a href="books.html">Children's Books</a></li>
+								<li><a href="books.html">Comics &amp; Graphic</a></li>
+								<li><a href="books.html">Computers &amp; Internet</a></li>
+								<li><a href="books.html">Cooking, Food &amp; Wine</a></li>
+								<li><a href="books.html">Entertainment</a></li>
+								<li><a href="books.html">History</a></li>
+								<li><a href="books.html">Home &amp; Garden</a></li>
+								<li><a href="books.html">Law</a></li>
+								<li><a href="books.html">Literature &amp; Fiction</a></li>
+								<li><a href="books.html">Libros</a></li>
+								<li><a href="books.html">Medicine</a></li>
+								<li><a href="books.html">Mystery &amp; Thrillers</a></li>
+								<li><a href="books.html">Nonfiction</a></li>
+								<li><a href="books.html">Outdoors &amp; Nature</a></li>
+								<li><a href="books.html">Parenting &amp; Families</a></li>
+								<li><a href="books.html">Poetry</a></li>
+								<li><a href="books.html">Professional &amp; Technical</a></li>
+								<li><a href="books.html">Reference</a></li>
+								<li><a href="books.html">Religion &amp; Spirituality</a></li>
+								<li><a href="books.html">Romance</a></li>
+								<li><a href="books.htmls">Science</a></li>
+								<li><a href="books.html">Science Fiction &amp; Fantasy</a></li>
+								<li><a href="books.html">Sports</a></li>
+								<li><a href="books.html">Teens</a></li>
+								<li><a href="books.html">Textbooks</a></li>
+								<li><a href="books.html">Travel</a></li>
+							</ul>
+						</div><!-- bks-cat -->	
+					</div><!-- list container  -->
 				</div><!-- browse by categories -->
 				<div class="box mobile dim">
 					<h3>Free Mobile Apps</h3>
@@ -208,5 +210,7 @@
 			<span class="footnote">©2004-2013 BooksPrice LLC All rights reserved.</span>
 		</div> <!-- footer -->
 	</div> <!-- bottom wrapper -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
