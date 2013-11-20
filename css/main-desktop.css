@@ -5,11 +5,11 @@
 		background-color: white; /***********************ERASE ******/
 	}
 	.top-wrapper div.header,
-	.wrapper div.books-intro,
+	.wrapper div.books-head,
 	.wrapper div.books-content,
 	.wrapper div.main-search,
 	.wrapper div.main-content,
-	.wrapper div.price-intro,
+	.wrapper div.price-head,
 	.bottom-wrapper div.footer {
 		width: 980px; 
 		margin: 0px auto;     
@@ -41,7 +41,7 @@
 	ul.sister-sites li {
 		font-size: 1em;
 	}
-	.intro div.windows {
+	.main-content div.windows {
 		width: 100%;
 		padding: 0px;
 		margin: 0px auto;
@@ -117,11 +117,7 @@
 	.wrapper div.books-content {
 		padding-top: 25px;
 	}
-	/* PRICE CHART */
 	
-
-	/* SIDE BAR */
-
 
 
 

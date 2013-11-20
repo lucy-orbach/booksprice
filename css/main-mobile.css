@@ -4,17 +4,7 @@
  		background: #FFFFFF url('../images/bgd/bgdBooks480.png') no-repeat center top;
  		background-position: 0px 165px;	/*************FIX  ******/
 	}
-	/********* G E N E R I C    C L A S S E S  *****/
-
-	/********* <a href> L I N K    C L A S S E S  *****/
-
-	/******   B U T T O N S   S T Y L E S *****/
-
-	/*  ICONS STYLES */
-
-	/******   F O O T E R     *****/
-
-	/*******  H E A D E R    ********/
+	/**************  H E A D E R    ********/
 	div.top-wrapper, .top-wrapper div.header {
 		height: 165px;      
 	}	
@@ -28,7 +18,7 @@
 		width: 90%;
 		margin: 5px auto;
 	}	
-	/********  M  A  I  N     C  O  N  T  E  N  T   *******/  
+	/*****  M  A  I  N     C  O  N  T  E  N  T   *******/  
 	/* H O M E P A G E  */
 	.main-search input {
 	margin: 3px auto;

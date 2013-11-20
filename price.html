@@ -32,9 +32,9 @@
 								<li><a class="borderline" href="this">Twitter Alerts</a></li>
 							</ul>  <!-- my stuff menu -->	
 						</li>
-						<li><a href="#" class="sm tw">Twitter</a></li>
-						<li><a href="#" class="sm gl">Google</a></li>
-						<li><a href="#" class="sm fb">Facebook</a></li>
+						<li><a href="#" class="social tw">Twitter</a></li>
+						<li><a href="#" class="social gl">Google</a></li>
+						<li><a href="#" class="social fb">Facebook</a></li>
 					</ul>	
 				</div><!-- topbar-right -->
 			</div><!--topbar -->
@@ -52,8 +52,8 @@
 	</div><!-- *****  T  O  P    W  R  A  P  P   E  R   ***** -->
 	<div class="wrapper">
 		<div class="books-bkgd">
-			<div class="price-intro fcontainer">
-				<div class="bk-holder intro">
+			<div class="price-head fcontainer">
+				<div class="bk-holder head">
 					<img src="http://ecx.images-amazon.com/images/I/51qv88fYzCL._SL160_.jpg" class="bk-pic" alt="bookcover" /> 
 				</div>
 				<h3><em><span class="circle small">P</span>rice Comparison for:</em> Surprise Attack Of Jabba lie Puppett: An Origami Yoda Book Surprise Attack Of</h3>
@@ -62,25 +62,21 @@
 					<li>Hardcover | First Edition</li> 
 					<li>ISBN: 1419708589 | 0571419708589</li>
 				</ul>
-				<div class="op-container">
+				<div class="op-container fcontainer">
 					<ul class="price-nav fcontainer">
-						<li class="tab">
-							<a class="show-op" href="this">Set Preferences</a>
-						</li>
-						<li class="tab active">
-							<a class="show-op" href="this">Set Alerts </a>
-						</li>
+						<li id="prefLink" class="tab pointer active">Set Preferences</li>
+						<li id="alertLink" class="tab pointer">Set Alerts</li>
 						<li>
 							<ul class="share fcontainer">
-								<li><a href="#" class="sm tw">Twitter</a></li>
-								<li><a href="#" class="sm gl">Google</a></li>
-								<li><a href="#" class="sm fb">Facebook</a></li>
-								<li><a href="#" class="sm em">Email</a></li>
-								<li><a href="#" class="sm rss">RSS</a></li>
+								<li><a href="#" class="social tw">Twitter</a></li>
+								<li><a href="#" class="social gl">Google</a></li>
+								<li><a href="#" class="social fb">Facebook</a></li>
+								<li><a href="#" class="social em">Email</a></li>
+								<li><a href="#" class="social rss">RSS</a></li>
 							</ul><!-- share -->	
 						</li>
 					</ul> <!-- price-nav -->
-					<ul class="pref fcontainer hide">
+					<ul class="pref fcontainer slide-in">
 						<li class="bk-cond">Include:
 							<form>
 								<ul class="condition fcontainer">
@@ -128,7 +124,7 @@
 						</li>
 					</ul><!-- pref -->
 					
-					<div class="alert-op">
+					<div class="alert-op slide-out">
 						<ul class="alert-menu">
 							<li class="active"><a href="#">Set Email Price Alert</a></li>
 							<li><a href="#">Track the Price by RSS</a></li>
@@ -148,14 +144,14 @@
 									<li>
 										<input type="text" size="25" name="searchType" placeholder="Enter Email" />
 										<input type="text" size="25" name="searchType" placeholder="Confirm Email" />
-										<input type="submit" value="Submit" class="button" />
+										<input type="submit" value="Submit" class="submit-btn" />
 									</li>
 								</ul><!-- email alert  -->
 							</form>
 						</div><!-- set alert -->
 					</div><!-- alert-op -->
 				</div> <!-- op-container -->	
-			</div><!--books intro -->
+			</div><!--books head -->
 		</div><!-- books-bgd -->
 		<!-- ********************    P  R  I  C  E     C  H  A  R  T  ************************** -->
 		<div class="books-content fcontainer">
@@ -172,9 +168,9 @@
 					</ul>
 				</div>
 				<div class="body-wrapper">
-					<ul class="row first">
+					<ul id="FirstRow"class="row first">
 						<li class="triple">Amazon.co.uk Marketplace</li>	
-						<li class="double">Used</li>	
+						<li class="double">Used<span class="sup">+</span></li>	
 						<li class="double">24 hours</li>	
 						<li class="single">$17.01</li>	
 						<li class="single">$26.95</li>	
@@ -182,7 +178,7 @@
 						<li class="store-link">
 							<button class="goto">Go to <span class="circle"> > </span><br />Amazon.co.uk Marketplace</button>
 						</li>
-						<li class="more"><span class="circle x-sm">-</span>BRAND NEW-NEVER USED-IN PUBLISHER BOX. Don't be fooled by others selling USED books as NEW books. INTERNATIONAL shipping available. </li>
+						<li class="more more-hidden"><p>BRAND NEW-NEVER USED-IN PUBLISHER BOX. Don't be fooled by others selling USED books as NEW books. INTERNATIONAL shipping available.</p></li>
 
 					</ul>
 					<ul class="row">
@@ -209,7 +205,7 @@
 					</ul>
 					<ul class="row">
 						<li class="triple">eBay</li>	
-						<li class="double">Rental</li>	
+						<li class="double">Rental <span class="sup">+</span></li>	
 						<li class="double">Available</li>	
 						<li class="single">$27.98</li>	
 						<li class="single">$3.99</li>	
@@ -217,6 +213,7 @@
 						<li class="store-link">
 							<button class="goto">Go to <span class="circle"> > </span><br />eBay</button>
 						</li>
+						<li class="more more-hidden"><p>fooled by others selling USED books as NEW books. INTERNATIONAL't be  shipping available.</p></li>
 					</ul>
 					<ul class="row">
 						<li class="triple">ecampus-marketplace</li>	
@@ -347,6 +344,9 @@
 			<span class="footnote">©2004-2013 BooksPrice LLC All rights reserved.</span>
 		</div> <!-- footer -->
 	</div> <!-- bottom wrapper -->
+	<!-- JAVASCRIPT -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
+	<script src="js/main.js"></script>
 </body>
 </html>

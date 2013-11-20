@@ -1,6 +1,9 @@
+/*$(document).ready(function() {
+  
+}); */
 
-// F U N C T I O N : S W I T C H  M Y  D I V
-
+// ********  F  U  N  C  T  I  O  N  :  switchMYdiv
+//Switches Div with a slide up and dowm motion
 var fromDiv1 = [];
 var toDiv2 = [];
 var linkToFirst = [];
@@ -15,16 +18,18 @@ function switchMYdiv (fromDiv,toDiv,linkToFirst,linkToSecond) {
 	});
 };
 
-// SWITCH MY DIV: CUSTOMIZED FOR SEARCH BASIC - ADVANCED
+//CUSTOM:switch basic search to advanced search
 var goAdv = $( '#adv' );
 var goBasic = $ ( '#base' );
 var searchBox = $ ( 'form.srch-basic' ); 
 var searchAdv = $ ( 'form.srch-adv' );
-//CALL FUNCTIONS
+//call Function
 switchMYdiv (searchBox,searchAdv,goAdv,goBasic)
 switchMYdiv (searchAdv,searchBox,goBasic,goAdv)
 
-// F U N C T I O N:  S C R O L L  T  O  A N C H O R
+
+// ********  F  U  N  C  T  I  O  N  :  scrollToAnchor
+//performs an slow motion scroll to Anchor
 var linkToAnchor = [];
 var myAnchor = [];
 
@@ -34,28 +39,30 @@ function scrollToAnchor (linkToAnchor,myAnchor) {
 	});
 
 };
-//Customize for Link to Browse by Categories
+//CUSTOM: for Link to Browse by Categories
 var goCat = $('#linkCat');
 var anchorCat = $ ("a[name=BrowseByCategories]")
 console.log(goCat);
 //CALL FUNCTIONS
 scrollToAnchor (goCat,anchorCat)
 
+//********  F  U  N  C  T  I  O  N  :  slideMYdiv
+// slides back and forth two divs inside a visible area
 
-// S L I D E  B E T W E E N 2
 var linkToslideA = [];
 var linkToslideB = [];
 var slideA = [];
 var slideB = [];
 
-function slideMYdiv ( linkToslideA, slideA, slideB, linkToslideB ) {
+function slideMYdiv ( linkToslideA, slideA, linkToslideB, slideB  ) {
 	linkToslideA.click( function() {
 		linkToslideA.toggleClass('active');
 		linkToslideB.toggleClass('active');
-		slideA.removeClass('out').addClass('in');
-		slideB.removeClass('in').addClass('out');
+		slideA.removeClass('slide-out').addClass('slide-in');
+		slideB.removeClass('slide-in').addClass('slide-out');
 	}); 
 };
+//CUSTOM: TExtbooks & Books Category Lists
 var txtLink = $('#txtlink');
 var bksLink = $('#bkslink');
 var txtList = $('.txt-slide');
@@ -66,10 +73,110 @@ console.log (bksLink);
 console.log (txtList);
 console.log (bksList);
 
-slideMYdiv ( txtLink, txtList, bksList, bksLink)
-slideMYdiv (bksLink, bksList, txtList, txtLink)
+slideMYdiv ( txtLink, txtList, bksLink, bksList )
+slideMYdiv ( bksLink, bksList, txtLink, txtList )
 
+//CUSTOM: Preference Box and Alert Box
 
+var prefLink = $('#prefLink');
+var alertLink = $('#alertLink');
+var prefBox = $('.pref');
+var alertBox = $('.alert-op');
+
+slideMYdiv ( prefLink, prefBox, alertLink, alertBox )
+slideMYdiv ( alertLink, alertBox, prefLink, prefBox )
+
+// ********  F  U  N  C  T  I  O  N  :  removePriority
+//removes class when user hover into a specific area
+
+/* The hover() method specifies two functions to run when the mouse pointer hovers over the selected elements.
+
+If only one function is specified, it will be run for both the mouseenter and mouseleave events.
+
+Syntax
+$(selector).hover(inFunction,outFunction)
+*/
+
+var selectedArea = [];
+var targetedElement = [];
+var classToRemove = [];
+
+function removePriority (selectedArea, targetedElement, classToRemove) {
+	selectedArea.hover( function() {
+			targetedElement.removeClass( classToRemove );
+		}, function() {
+			targetedElement.addClass( classToRemove );
+		}
+	)	
+};
+
+//CUSTOM: remove First Class from the firs result of Price Comparison
+var chart = $('.body-wrapper');
+var topResult = $('#FirstRow');
+
+removePriority (chart, topResult, 'first' );
+
+//********  F  U  N  C  T  I  O  N  :  readMore
+// SHOW MORE
+var moreBtn = [];
+var closeBtn = [];
+var infoDiv = $('li.more');
+var divToOpen = [];
+var btnContainer = [];
+
+console.log ("show " + infoDiv);
+/* F U N C T I O N : R E A D    M O R E - OLD FUNCTION:
+infoDiv.hide();
+function readMore(moreBtn, closeBtn) {
+	moreBtn.click ( function(){
+		btnContainer = $(this).parent();    	
+		divToOpen = btnContainer.siblings('.more'); 
+		divToOpen.show();    
+		var divCloseBtn = divToOpen.find(closeBtn);	
+		divCloseBtn.click ( function (){
+			divToOpen.hide();
+			}
+		);
+	});
+};
+var moreInfo = $('span.sup');
+var hideInfo = $('button.x-sm');		
+readMore(moreInfo,hideInfo)
+*/
+
+function readMore(moreBtn) {
+	//when the "+" btn is clicked we make the li.more appear
+	moreBtn.click ( function(){
+		//gets the "li" that contains the "+"
+		btnContainer = $(this).parent();    	
+		 //gets the "li.more"
+		sectionToOpen = btnContainer.siblings('.more'); 
+		console.log( divToOpen )
+		if ( sectionToOpen.hasClass( 'more-hidden' ) ) {   
+			//now we try to close it
+			moreBtn.text('-')
+			sectionToOpen.removeClass('more-hidden')
+		} else {
+			//now we try to close it
+			moreBtn.text('+')
+			sectionToOpen.addClass('more-hidden')
+		}
+		
+	});//divCloseBtn	
+};
+
+var moreInfo = $('.sup');
+		
+readMore(moreInfo);
+
+$('.row').mouseleave( function() {
+	var more = $( this ).find('.more');
+console.log( more )
+	if ( more.length > 0 ) {
+		more.addClass( 'more-hidden' );
+		$( this ).find('.sup').text('+');
+	}
+})
 
 
 

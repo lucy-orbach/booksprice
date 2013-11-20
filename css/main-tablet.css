@@ -2,18 +2,6 @@
 
 @media screen and ( min-width: 481px ) {
 
-	/********  B A S I C   E L E M E N T S  ******* */
-
-	/********* G E N E R I C    C L A S S E S  *****/
-
-	/********* <a href> L I N K    C L A S S E S  *****/
-
-	/******   B U T T O N S   S T Y L E S *****/
-
-	/*  ICONS STYLES */
-
-	/******   F O O T E R    *****/
-
 	/******* H E A D E R    ********/
 	div.top-wrapper, 
 	.top-wrapper div.header {
@@ -31,13 +19,7 @@
 		margin-top: 20px;
 		margin-left: 17%;	
 	}
-	/* TOP-BAR */
-
-	/* TOP-BANNER */
-
-	/********  M  A  I  N     C  O  N  T  E  N  T   *******/  
-
-	/* GENERIC */
+	/**** M  A  I  N     C  O  N  T  E  N  T  ***/  
 
 	/* H O M E P A G E  */
 	.main-search form {
@@ -83,7 +65,7 @@
 		padding-top: 3px;
 		padding-right: 2px;
 	}
-	.intro div.windows {
+	.main-content div.windows {
 		width: 100%;
 		padding: 0px;
 		margin: 0px auto;
@@ -102,25 +84,5 @@
 	div.box.mobile, div.box.rent {
 		margin-right: 10px;
 	}
-	/* BOOKS RESULTS */
-
-	/* PRICE CHART */
-
-	/* SIDE BAR */
-
-	/******   M  A I N   S E A R C H  ******/
 	
-	/****  M A I N  -  C O N T E N T ******/
-	
-	.piano
-	-webkit-transition: opacity 0.3s ease-in-out;
--moz-transition: opacity 0.3s ease-in-out;
--o-transition: opacity 0.3s ease-in-out;
-transition: opacity 0.3s ease-in-out;
-}
- 
-
-	
-
- 	
 }
