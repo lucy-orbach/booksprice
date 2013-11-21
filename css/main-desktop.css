@@ -1,5 +1,7 @@
 @media screen and ( min-width: 769px ) {
-	/********  B A S I C   E L E M E N T S  ******* */ 
+	/********  B A S I C   E L E M E N T S  ******* */
+	/**** WEBSITE COLORS: GREEN: #97C024; / #BED455
+	GRAY LIGHT-> DARK: #F3F3F3 / #E5E5E5 / #A6A6A6 / #8C8C8C / #737373 ****/ 
 	body {
 		font-size: 14px;
 		background-color: white; /***********************ERASE ******/
@@ -14,33 +16,49 @@
 		width: 980px; 
 		margin: 0px auto;     
 	}
-	/********* G E N E R I C    C L A S S E S  *****/
-
-	/********* <a href> L I N K    C L A S S E S  *****/
-
-	/******   B U T T O N S   S T Y L E S *****/
-
-	/*  ICONS STYLES */
-
-	/******   F O O T E R    *****/
-
-	/******* H E A D E R     ********/
+	/***********************************************/
+	/*************   H  E  A  D  E  R    ***********/
+	/***********************************************/
+	div.top-wrapper {
+	height: 120px;
+	}
+	/*div.top-wrapper.fixed{
+		position: fixed;
+		z-index: 100;
+		height: 120px;
+		overflow: hidden;
+	}
+	div.top-wrapper.fixed-animation {
+		height: 42px;
+		box-shadow: 3px 3px 6px #999999;
+		transition: height 0.5s;
+		-webkit-transition: height 0.5s;
+	}
+	*/
 	.top-banner nav {
 		width: 35%;
 		margin-left: 30%;	
 	}
-	
-	/********  M  A  I  N     C  O  N  T  E  N  T   *******/  
-	/* H O M E P A G E  */
+	/***********************************************/
+	/*****  M  A  I  N    C  O  N  T  E  N  T  *****/
+	/***********************************************/ 
+	/*body.book-results div.wrapper  {
+		padding-top: 120px;
+	}
+	*/
+	/********** H O M E P A G E  **********/
+	/* HP-MAIN SEARCH */
 	.main-search form {
 		width: 65%;		
 	}
 	.main-search ul.searchlinks {
 		width: 50%;
 	}
+	/* HP-INTRODUCTION */
 	ul.sister-sites li {
 		font-size: 1em;
 	}
+	/* HP-WINDOWS */
 	.main-content div.windows {
 		width: 100%;
 		padding: 0px;

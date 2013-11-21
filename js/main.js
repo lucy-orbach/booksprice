@@ -2,7 +2,7 @@
   
 }); */
 
-// ********  F  U  N  C  T  I  O  N  :  switchMYdiv
+// ********  F  U  N  C  T  I  O  N  :  switchMYdiv ************
 //Switches Div with a slide up and dowm motion
 var fromDiv1 = [];
 var toDiv2 = [];
@@ -28,7 +28,7 @@ switchMYdiv (searchBox,searchAdv,goAdv,goBasic)
 switchMYdiv (searchAdv,searchBox,goBasic,goAdv)
 
 
-// ********  F  U  N  C  T  I  O  N  :  scrollToAnchor
+// ********  F  U  N  C  T  I  O  N  :  scrollToAnchor ****************
 //performs an slow motion scroll to Anchor
 var linkToAnchor = [];
 var myAnchor = [];
@@ -46,7 +46,7 @@ console.log(goCat);
 //CALL FUNCTIONS
 scrollToAnchor (goCat,anchorCat)
 
-//********  F  U  N  C  T  I  O  N  :  slideMYdiv
+//********  F  U  N  C  T  I  O  N  :  slideMYdiv *************
 // slides back and forth two divs inside a visible area
 
 var linkToslideA = [];
@@ -62,7 +62,7 @@ function slideMYdiv ( linkToslideA, slideA, linkToslideB, slideB  ) {
 		slideB.removeClass('slide-in').addClass('slide-out');
 	}); 
 };
-//CUSTOM: TExtbooks & Books Category Lists
+//CUSTOM: Textbooks & Books Category Lists
 var txtLink = $('#txtlink');
 var bksLink = $('#bkslink');
 var txtList = $('.txt-slide');
@@ -86,7 +86,21 @@ var alertBox = $('.alert-op');
 slideMYdiv ( prefLink, prefBox, alertLink, alertBox )
 slideMYdiv ( alertLink, alertBox, prefLink, prefBox )
 
-// ********  F  U  N  C  T  I  O  N  :  removePriority
+// ********  F  U  N  C  T  I  O  N  :  fixMYbar **********************
+//fixes the top bar on scroll
+
+function fixMYbar( myBar, classToAdd ) {
+	$( 'window' ).scroll( function() {
+  		myBar.addClass('classToAdd')
+	});
+}
+
+var headBar = $('.fixed');
+
+fixMYbar( headBar, 'fixed-animation' )
+
+
+// ********  F  U  N  C  T  I  O  N  :  removePriority *************
 //removes class when user hover into a specific area
 
 /* The hover() method specifies two functions to run when the mouse pointer hovers over the selected elements.
@@ -116,33 +130,16 @@ var topResult = $('#FirstRow');
 
 removePriority (chart, topResult, 'first' );
 
-//********  F  U  N  C  T  I  O  N  :  readMore
+
+
+//********  F  U  N  C  T  I  O  N  :   readMore   ***************
 // SHOW MORE
 var moreBtn = [];
-var closeBtn = [];
 var infoDiv = $('li.more');
 var divToOpen = [];
 var btnContainer = [];
 
 console.log ("show " + infoDiv);
-/* F U N C T I O N : R E A D    M O R E - OLD FUNCTION:
-infoDiv.hide();
-function readMore(moreBtn, closeBtn) {
-	moreBtn.click ( function(){
-		btnContainer = $(this).parent();    	
-		divToOpen = btnContainer.siblings('.more'); 
-		divToOpen.show();    
-		var divCloseBtn = divToOpen.find(closeBtn);	
-		divCloseBtn.click ( function (){
-			divToOpen.hide();
-			}
-		);
-	});
-};
-var moreInfo = $('span.sup');
-var hideInfo = $('button.x-sm');		
-readMore(moreInfo,hideInfo)
-*/
 
 function readMore(moreBtn) {
 	//when the "+" btn is clicked we make the li.more appear
@@ -178,9 +175,55 @@ console.log( more )
 	}
 })
 
+//********* F  U  N  C  T  I  O  N  :  showThisTab   *****************
+//show and close tab with buttons/links
+var tabLink = [];
+var closeLink = $('.hide-this');
+var tabName = [];
+var tabToOpen = [];
+console.log(closeLink);
 
+function showThisTab(tabLink,tabName) {
+	tabLink.click ( function () {
+		
+		var myLink = $(this);
+		var btnContainer = myLink.parent();
+		var allTabs= btnContainer.siblings();
+		var tabContainer = btnContainer.siblings( tabName );
 
+		allTabs.removeClass('unwrap');
+		tabContainer.addClass('unwrap');
+		myLink.addClass('active');
+		/*$( 'window' ).scroll ( function() {
+			allTabs.removeClass('unwrap');
+		});*/
+		closeLink.click ( function(){
+			tabContainer.removeClass('unwrap');
+			myLink.removeClass('active');
+		});	
+	});
+};
+var revLink = $('.revLink');
+var revTab = '.review'
+var formatLink = $('.formatLink');
+var formatTab = '.formats';
+var discussLink = $('.discussLink');
+var discussTab = '.discuss';
 
+showThisTab( revLink, revTab )
+showThisTab( formatLink, formatTab )
+showThisTab( discussLink, discussTab )
+
+			
+ /*tabToOpen = btnContainer.siblings( tabName );
+		
+		console.log ( tabToOpen );
+		
+		tabToOpen.addClass('unwrap');
+		
+		closeLink.click(){
+			tabToOpen.removeClass('unwrap');
+		}*/
 
 
 
