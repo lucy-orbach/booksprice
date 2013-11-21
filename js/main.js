@@ -214,16 +214,34 @@ showThisTab( revLink, revTab )
 showThisTab( formatLink, formatTab )
 showThisTab( discussLink, discussTab )
 
-			
- /*tabToOpen = btnContainer.siblings( tabName );
-		
-		console.log ( tabToOpen );
-		
-		tabToOpen.addClass('unwrap');
-		
-		closeLink.click(){
-			tabToOpen.removeClass('unwrap');
-		}*/
+//********* F  U  N  C  T  I  O  N  :  switchMYview   *****************
+//
+var clickedIcon = [];
+var classToAdd = [];
+var classToRemove = [];
+/**/
+var viewASgrid = $('.view-grid');
+var viewASlist = $('.view-list');
+var gridView = 'grid-view' ;
+var listView = 'list-view' ;
+var myBooks = $('.bk-results');
+
+function switchMYview (clickedIcon, classToAdd, classToRemove, otherIcon) {
+	clickedIcon.click ( function() { 
+			myBooks.removeClass( classToRemove );
+			myBooks.addClass( classToAdd );
+			otherIcon.removeClass( ' active ');
+			clickedIcon.addClass ('active');
+		}
+	);
+};
+
+switchMYview( viewASgrid, gridView, listView, viewASlist )
+switchMYview( viewASlist, listView, gridView, viewASgrid )
+
+
+
+
 
 
 
