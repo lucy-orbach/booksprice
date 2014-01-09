@@ -1,26 +1,21 @@
 @media screen and ( min-width: 769px ) {
-	/********  B A S I C   E L E M E N T S  ******* */
-	/**** WEBSITE COLORS: GREEN: #97C024; / #BED455
-	GRAY LIGHT-> DARK: #F3F3F3 / #E5E5E5 / #A6A6A6 / #8C8C8C / #737373 ****/ 
-	body {
-		font-size: 14px;
-		background-color: white; /***********************ERASE ******/
+	
+	.wrapper div.books-content.expand {
+		width: 90%;
 	}
-	.top-wrapper div.header,
-	.wrapper div.books-head,
-	.wrapper div.books-content,
-	.wrapper div.main-search,
-	.wrapper div.main-content,
-	.wrapper div.price-head,
-	.bottom-wrapper div.footer {
-		width: 980px; 
-		margin: 0px auto;     
+	section div.container {
+	width: 1000px;
+	padding: 0px;
+	margin: 0px auto;
 	}
-	/***********************************************/
-	/*************   H  E  A  D  E  R    ***********/
-	/***********************************************/
-	div.top-wrapper {
-	height: 120px;
+	/********  T O P - B A R  *******/
+	div.bar-container > div {
+	width: 50%;
+	float: left;
+	}
+	body.home form.search-bar,
+	body.home a.advlink {
+	display: none;
 	}
 	/*div.top-wrapper.fixed{
 		position: fixed;
@@ -35,72 +30,28 @@
 		-webkit-transition: height 0.5s;
 	}
 	*/
+	/******  B A N N E R   ********/
 	.top-banner nav {
-		width: 35%;
-		margin-left: 30%;	
+		width: 30%;
+		margin-left: 35%;
 	}
-	/***********************************************/
-	/*****  M  A  I  N    C  O  N  T  E  N  T  *****/
-	/***********************************************/ 
-	/*body.book-results div.wrapper  {
-		padding-top: 120px;
-	}
-	*/
-	/********** H O M E P A G E  **********/
-	/* HP-MAIN SEARCH */
-	.main-search form {
+	/*******  P A N E L S  ********/
+	.search form {
 		width: 65%;		
 	}
-	.main-search ul.searchlinks {
+	.search ul.searchlinks {
 		width: 50%;
 	}
-	/* HP-INTRODUCTION */
+	/*******  M A I N   ************/ 
+	/* HOMEPAGE */
 	ul.sister-sites li {
 		font-size: 1em;
 	}
-	/* HP-WINDOWS */
-	.main-content div.windows {
-		width: 100%;
-		padding: 0px;
-		margin: 0px auto;
-	}
 	div.box.categories {
-		width: 637px;
+		width: 660px;
 		height: 400px;
 		margin-right: 20px;
 		padding-bottom: 10px; 
-	}
-	#list-container {
-		width: 617px;
-		height: 225px;
-		position: relative;
-		overflow: hidden;
-	}
-	div.txt-slide,
-	div.bks-slide {
-		width: 617px;
-		float: left;
-	}
-	div.txt-slide.in,
-	div.bks-slide.in {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	transition: left 0.5s;
-	-webkit-transition: left 1s; /* Safari */	
-	}
-
-	div.txt-slide.out {
-	position: absolute;
-	left: -620px;
-	transition: left 0.5s;
-	-webkit-transition: left 1s; /* Safari */
-	}
-	div.bks-slide.out {
-	position: absolute;
-	left: 620px;
-	transition: left 0.5s;
-	-webkit-transition: left 1s; /* Safari */
 	}
 	div.box.mobile,
 	div.box.dvd {
@@ -109,14 +60,20 @@
 	}
 	div.box.sell,
 	div.box.rent {
-		width: 46%;
+		width: 47%;
 		height: 180px;
 	}
+	#list-container {
+		height: 225px;
+	}
+	ul.bks-list {
+		line-height: 1.6em;
+	}
 	div.box.rent {
-		margin-right: 20px;
+		margin-right: 10px;
 	}
 	div.box.tv {
-		width: 100%;
+		width: 97%;
 	}
 	div.box.tv > div {
 		float: left;
@@ -131,21 +88,6 @@
 		text-align: center;
 		padding: 10px 0px;
 	}
-	/* BOOKS RESULTS */
-	.wrapper div.books-content {
-		padding-top: 25px;
-	}
-
-
-
-
 	
-
 	
-
-	
-
-
-
-
 }

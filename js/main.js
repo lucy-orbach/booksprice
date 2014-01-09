@@ -1,7 +1,3 @@
-/*$(document).ready(function() {
-  
-}); */
-
 // ********  F  U  N  C  T  I  O  N  :  switchMYdiv ************
 //Switches Div with a slide up and dowm motion
 var fromDiv1 = [];
@@ -18,6 +14,8 @@ function switchMYdiv (fromDiv,toDiv,linkToFirst,linkToSecond) {
 	});
 };
 
+
+
 //CUSTOM:switch basic search to advanced search
 var goAdv = $( '#adv' );
 var goBasic = $ ( '#base' );
@@ -27,6 +25,24 @@ var searchAdv = $ ( 'form.srch-adv' );
 switchMYdiv (searchBox,searchAdv,goAdv,goBasic)
 switchMYdiv (searchAdv,searchBox,goBasic,goAdv)
 
+// ********  F  U  N  C  T  I  O  N  :  dropDown ************
+var btnMenu = [];
+var myMenu = [];
+
+function dropDown ( btnMenu, myMenu ) {
+	btnMenu.click(function() {
+		if ( myMenu.hasClass('hide') ) {
+			myMenu.slideDown ("slow", function() {});
+			myMenu.removeClass('hide');
+		} else {
+			myMenu.slideUp ("slow", function() {});
+			myMenu.addClass('hide');
+		}
+	});
+};
+
+dropDown ( $('.mystuff'), $( '.mymenu') )
+dropDown ( $('.browse'), $( '.browse-inside') )
 
 // ********  F  U  N  C  T  I  O  N  :  scrollToAnchor ****************
 //performs an slow motion scroll to Anchor
@@ -86,7 +102,7 @@ var alertBox = $('.alert-op');
 slideMYdiv ( prefLink, prefBox, alertLink, alertBox )
 slideMYdiv ( alertLink, alertBox, prefLink, prefBox )
 
-// ********  F  U  N  C  T  I  O  N  :  fixMYbar **********************
+// ********  F  U  N  C  T  I  O  N  :  fixMYbar *******************
 //fixes the top bar on scroll
 
 function fixMYbar( myBar, classToAdd ) {
@@ -98,6 +114,37 @@ function fixMYbar( myBar, classToAdd ) {
 var headBar = $('.fixed');
 
 fixMYbar( headBar, 'fixed-animation' )
+
+// ********  F  U  N  C  T  I  O  N  :  enLarge **********************
+//fixes the top bar on scroll
+
+var lrgLink = [];
+var lrgDiv = $('li.more');
+var lrgDiv = [];
+var closeBtn = $('span.close');
+var linkContainer = [];
+
+
+
+function enLarge(lrgLink) {
+	//when the "enlarge" link is clicked we make the div.enlarge appear
+	lrgLink.click ( function(){
+		//gets the "li" that contains the "enlarge"
+		linkContainer = $(this).parent();    	
+		 //gets the "li.more"
+		lrgDiv = linkContainer.siblings('.enlarge'); 
+		lrgDiv.fadeIn ('slow');
+		closeBtn.click ( function() {
+			lrgDiv.fadeOut ('slow');
+		});	  //closeBtn.click
+	}); //lrgLink.click	
+};   //enLarge function
+
+
+var lrgBookcover = $('li.enlargeLink');
+enLarge( lrgBookcover );
+
+
 
 
 // ********  F  U  N  C  T  I  O  N  :  removePriority *************
@@ -149,14 +196,14 @@ function readMore(moreBtn) {
 		 //gets the "li.more"
 		sectionToOpen = btnContainer.siblings('.more'); 
 		console.log( divToOpen )
-		if ( sectionToOpen.hasClass( 'more-hidden' ) ) {   
+		if ( sectionToOpen.hasClass( 'hide' ) ) {   
 			//now we try to close it
 			moreBtn.text('-')
-			sectionToOpen.removeClass('more-hidden')
+			sectionToOpen.removeClass('hide')
 		} else {
 			//now we try to close it
 			moreBtn.text('+')
-			sectionToOpen.addClass('more-hidden')
+			sectionToOpen.addClass('hide')
 		}
 		
 	});//divCloseBtn	
@@ -170,7 +217,7 @@ $('.row').mouseleave( function() {
 	var more = $( this ).find('.more');
 console.log( more )
 	if ( more.length > 0 ) {
-		more.addClass( 'more-hidden' );
+		more.addClass( 'hide' );
 		$( this ).find('.sup').text('+');
 	}
 })
@@ -185,22 +232,25 @@ console.log(closeLink);
 
 function showThisTab(tabLink,tabName) {
 	tabLink.click ( function () {
-		
 		var myLink = $(this);
 		var btnContainer = myLink.parent();
+		var allLinks = myLink.siblings();
 		var allTabs= btnContainer.siblings();
 		var tabContainer = btnContainer.siblings( tabName );
 
-		allTabs.removeClass('unwrap');
-		tabContainer.addClass('unwrap');
-		myLink.addClass('active');
-		/*$( 'window' ).scroll ( function() {
-			allTabs.removeClass('unwrap');
-		});*/
-		closeLink.click ( function(){
+		if ( myLink.hasClass('active') ) {
 			tabContainer.removeClass('unwrap');
 			myLink.removeClass('active');
-		});	
+		} else {
+			allTabs.removeClass('unwrap');
+			tabContainer.addClass('unwrap');
+			myLink.addClass('active');
+			allLinks.removeClass('active');
+			closeLink.click ( function(){
+				tabContainer.removeClass('unwrap');
+				myLink.removeClass('active');
+			});
+		}	
 	});
 };
 var revLink = $('.revLink');
@@ -214,7 +264,7 @@ showThisTab( revLink, revTab )
 showThisTab( formatLink, formatTab )
 showThisTab( discussLink, discussTab )
 
-//********* F  U  N  C  T  I  O  N  :  switchMYview   *****************
+//********* F  U  N  C  T  I  O  N  :  switchMYview   ************
 //
 var clickedIcon = [];
 var classToAdd = [];
@@ -222,28 +272,36 @@ var classToRemove = [];
 /**/
 var viewASgrid = $('.view-grid');
 var viewASlist = $('.view-list');
+var viewASslide = $('.view-slide');
 var gridView = 'grid-view' ;
 var listView = 'list-view' ;
-var myBooks = $('.bk-results');
-
-function switchMYview (clickedIcon, classToAdd, classToRemove, otherIcon) {
-	clickedIcon.click ( function() { 
-			myBooks.removeClass( classToRemove );
-			myBooks.addClass( classToAdd );
-			otherIcon.removeClass( ' active ');
-			clickedIcon.addClass ('active');
-		}
-	);
-};
-
-switchMYview( viewASgrid, gridView, listView, viewASlist )
-switchMYview( viewASlist, listView, gridView, viewASgrid )
+var slideView = 'slide-view';
+var allClasses = 'grid-view list-view slide-view';
+var allIcons = $('.view-as li');
+var myBooks = $('#book-results');
+var container = $('.books');
 
 
 
+function switchMYview (clickedIcon, classToAdd ) {
+	clickedIcon.click ( function() {
+		container.removeClass('expand');
+		myBooks.removeClass( allClasses );
+		container.removeClass( 'exp' );
+		allIcons.removeClass( 'active');
+		myBooks.addClass( classToAdd );
+		clickedIcon.addClass ('active');
+		if (clickedIcon == viewASgrid) {
+				container.addClass('exp');
+		} //if clickedIcon == viewASslide)
+	});
+}	//funcitonswithMYview
 
 
 
+switchMYview( viewASgrid, gridView )
+switchMYview( viewASlist, listView )
+switchMYview( viewASslide, slideView )
 
 
 

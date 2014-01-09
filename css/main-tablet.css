@@ -1,74 +1,71 @@
 /* Tablet Layout: 768px */
-
 @media screen and ( min-width: 481px ) {
-
-	/******* H E A D E R    ********/
-	div.top-wrapper, 
-	.top-wrapper div.header {
-		height: 120px;      
-	}	
-	.home div.bar-left, 
-	.innerPage div.bar-right {
-		display: block;
+	
+	section div.container {
+		width: 750px;
+		padding: 0px 9px;
 	}
-	.top-bar > div {
-		width: 50%;
+	div.top-banner > * {
+		float: left;
 	}
+	/******   T O P - B A R  ********/
+	body.home div.bar-left {
+		display: none;
+	}
+	.bar-left form.search-bar {
+		width: 375px;
+	}
+	/*******   B A N N E R   ********/	
 	.top-banner nav {
-		width: 40%;
-		margin-top: 20px;
-		margin-left: 17%;	
+		width: 45%;
+		margin-left: 13%;
+		padding-top: 25px;
 	}
-	/**** M  A  I  N     C  O  N  T  E  N  T  ***/  
-
-	/* H O M E P A G E  */
-	.main-search form {
+	/*******   P A N E L S   *******/
+	section.panel.home {
+		height: 460px;
+	}
+	.panel  div.search {
+		padding: 60px 0px 0px;
+	}
+	.search form {
 		margin-top: 50px;
 		padding: 30px;
 		overflow: hidden;
 	}
-	.main-search input {
-	margin: 3px;
-	float: left;
+	.search input {
+		margin: 3px;
+		float: left;
 	}
-	.main-search ul.format {
-	margin-left: 15px;
-	padding-top: 10px;
+	.search ul.format {
+		margin-left: 15px;
+		padding-top: 10px;
 	}
 	input.search-btn {
 		position: absolute;
 		bottom: 30px;
 		right: 20px;
 	}
-	.intro div.third {
+	/*********  M A I N   ************/ 
+	ul.steps li {
 		width: 30%;
 		margin: 10px 0px 10px 20px;
 		float: left;
 		text-align: center;
 	}
-	div.third span.circle {
+	ul.steps span.circle {
 		margin: 0px auto 10px;
 		padding-top: 40px;	
 	}
-
-	div.third p {
-		font-size: .9em;
+	ul.steps p {
 		width: 90%;
 		margin: 0px auto;
-	}
-	ul.sister-sites li {
-		font-size: .9em;
 	}
 	ul.sister-sites span.circle {
 		width: 30px;
 		height: 27px;
 		padding-top: 3px;
 		padding-right: 2px;
-	}
-	.main-content div.windows {
-		width: 100%;
-		padding: 0px;
-		margin: 0px auto;
 	}
 	div.box {
 		float: left;
@@ -84,5 +81,24 @@
 	div.box.mobile, div.box.rent {
 		margin-right: 10px;
 	}
-	
+	#list-container {
+		height: 250px;	
+	}
+	ul.txt-list {
+		-moz-column-gap: 10;
+    	-moz-column-count: 3;
+    	-webkit-column-count: 3;
+    	-webkit-column-gap: 10;
+    	column-count: 3;
+    	column-gap: 10;
+	}
+	ul.bks-list {
+		-moz-column-gap: 3;
+    	-moz-column-count: 4;
+    	-webkit-column-count: 4;
+    	-webkit-column-gap: 3;
+    	column-count: 4;
+    	column-gap: 3;
+	}
+
 }

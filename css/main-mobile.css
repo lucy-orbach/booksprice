@@ -1,84 +1,119 @@
 @media screen and ( min-width: 321px) and ( max-width: 480px) {
-	/********  B A S I C   E L E M E N T S  ******* */ 
+	
 	body {
  		background: #FFFFFF url('../images/bgd/bgdBooks480.png') no-repeat center top;
- 		background-position: 0px 165px;	/*************FIX  ******/
+ 		background-position: 0px 160px;	
 	}
-	/**************  H E A D E R    ********/
-	div.top-wrapper, .top-wrapper div.header {
-		height: 165px;      
-	}	
-	.home div.bar-left, .innerPage div.bar-right {
+	section div.container {
+	width: 90%;
+	padding: 0px;
+	}
+	/******   T O P  -  B A R   *********/
+	body.home div.bar-left {
+	display: none;
+	}
+	body.innerPage div.bar-right {
 		display: none;
 	}
-	.top-bar > div {
+	.bar-left form.search-bar {
+		width: 90%;
+	}
+	div.bar-right nav {
+		margin: 0px;
+		width: 65px;
+		height: 100px;
+		margin: 0px 10px 0px;
+	}
+	
+	/******** 	B A N N E R    ********/
+	 
+	section.banner div.container {
+		width: 100%;  
+		margin: 0px auto;  
+	}
+	h1.logo {
+		margin: 0px auto;
+		background-position: center;
 		width: 100%;
 	}
-	div.top-banner > * {
-		width: 90%;
-		margin: 5px auto;
-	}	
-	/*****  M  A  I  N     C  O  N  T  E  N  T   *******/  
-	/* H O M E P A G E  */
-	.main-search input {
-	margin: 3px auto;
+	.top-banner nav {
+		width: 100%;
+		margin: 5px auto 0px;
+		z-index: 10;
 	}
-	.intro div.third {
+	nav ul.main-nav {
+		padding-top: 0px;
+	}
+	ul.main-nav li {
+		text-align: center;
+	}
+	.main-nav a {
+		color: #BED455;
+	}
+	.main-nav a:hover {
+		color: #737373;
+	}
+	.main-nav span.circle.small {
+		display: none;
+	}
+	/*********   P A N E L S   ********/
+	section.panel.home {
+		height: 450px;
+	}
+	.search form {
+		width: 95%;
+		padding: 15px 7px;
+	}
+	.search input {
+		margin: 10px auto 0px;
+	}
+	/*********   M A I N    ***********/ 
+	ul.steps li {
 		overflow: hidden;
 		width: 100%;
 		margin: 10px 0px 10px 20px;
 	}
-	div.third > * {
+	.steps li > * {
 		float: left;
 	}
-	div.third p {
+	.steps p {
 		width: 65%;
 		margin-left: 3%;
 		padding-top: 25px;
 	}
-	ul.sister-sites li {
-		font-size: .8em;
-	}
-	ul.sister-sites span.circle {
+	.sister-sites span.circle {
 		width: 25px;
 		height: 22px;
 	}
 	div.box {
-		width: 90%;
+		width: 100%;
+		margin: 20px auto;
 	}
 	div.box.mobile, div.box.dvd, div.box.sell,
 	div.box.rent {
 		height: 180px;
 	}
-	div.box.categories {
-		width: 430px;
-	}
 	.categories h3 {
-	width: 100%;
+		width: 100%;
 	}
 	.categories ul.browse {
 		width: 100%;	
 	}
 	#list-container {
-		width: 430px;
-		height: 300px;	
+		height: 350px;	
 	}
-	div.txt-slide, div.bks-slide {
-		width: 430px;
+	div.txt-slide, 
+	div.bks-slide {
+		width: 350px;
 	}
-	/* BOOKS RESULTS */
-
-	/* PRICE CHART */
-
-	/* SIDE BAR */
-	
-	
-	
-
-	
-	
-
-	
+	ul.bks-list {
+		-moz-column-gap: 2;
+    	-moz-column-count: 2;
+    	-webkit-column-count: 2;
+    	-webkit-column-gap: 2;
+    	column-count: 2;
+    	column-gap: 2;
+	}
 
 }
 
